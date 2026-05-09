@@ -7,7 +7,7 @@ Unlike traditional dense-only RAG pipelines, CyberAG combines lexical retrieval,
 
 # System Architecture
 
-![CyberAG Architecture]([assets/architecture.png](https://github.com/rahmasaber123/CYBER_RAG/blob/main/Screenshot%202026-05-09%20204402.png?raw=true))
+![CyberAG Architecture](https://github.com/rahmasaber123/CYBER_RAG/blob/main/Screenshot%202026-05-09%20204402.png?raw=true))
 
 
                     # System Architecture
