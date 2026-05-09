@@ -7,7 +7,12 @@ Unlike traditional dense-only RAG pipelines, CyberAG combines lexical retrieval,
 
 # System Architecture
 
-![CyberAG Architecture](assets/architecture.png)
+![CyberAG Architecture]([assets/architecture.png](https://github.com/rahmasaber123/CYBER_RAG/blob/main/Screenshot%202026-05-09%20204402.png?raw=true))
+
+
+                    # System Architecture
+
+```text
                     ┌────────────────────┐
                     │   NIST PDF Input   │
                     └─────────┬──────────┘
@@ -57,6 +62,35 @@ Unlike traditional dense-only RAG pipelines, CyberAG combines lexical retrieval,
             │ + Citations          │
             │ + Confidence         │
             └──────────────────────┘
+```
+
+## Architecture Overview
+
+The system uses a hybrid Retrieval-Augmented Generation (RAG) pipeline
+designed for cybersecurity documents based on the NIST Cybersecurity
+Framework 2.0.
+
+### Core Components
+
+- PDF parsing using LlamaParse / PyPDF
+- Metadata-aware chunking pipeline
+- Synthetic question generation for semantic recall improvement
+- Hybrid retrieval:
+  - BM25 sparse retrieval
+  - Chroma vector semantic retrieval
+- Reciprocal Rank Fusion (RRF)
+- Metadata boosting
+- Cross-encoder reranking
+- Grounded LLM synthesis
+- Structured responses with citations and confidence scoring
+
+### Key Features
+
+- Multilingual retrieval support
+- Reduced hallucinations through grounded generation
+- Semantic caching for lower latency
+- Production-style observability and modular design
+- Optimized retrieval for cybersecurity terminology and identifiers
             
 # Features
 
@@ -179,18 +213,7 @@ One of the main findings:
 
 Improving retrieval architecture can matter more than upgrading the LLM itself.
 
----
 
-# Future Improvements
-
-- Parent-child retrieval
-- Agentic retrieval
-- GraphRAG integration
-- Evaluation benchmark suite
-- Streaming responses
-- UI dashboard
-
----
 
 # Author
 Rahma Saber 
