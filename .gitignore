@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+venv/
+env/
+
+
+
+# Environment variables
+.env
+.env.*
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ChromaDB / Vector DB
+persist/
+chroma_db/
+*.sqlite3
+
+# Models / embeddings cache
+models/
+hf_cache/
+.cache/
+sentence_transformers/
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+
+
+# Ollama / local LLM artifacts
+ollama/
