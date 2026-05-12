@@ -23,11 +23,6 @@ env/
 .DS_Store
 Thumbs.db
 
-# ChromaDB / Vector DB
-persist/
-chroma_db/
-*.sqlite3
-
 # Models / embeddings cache
 models/
 hf_cache/
